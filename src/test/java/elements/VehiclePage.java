@@ -1,13 +1,13 @@
 package elements;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByCssSelector;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class VehiclePage extends VehicleElementMap {
+
 	
 	public VehiclePage() {
 		PageFactory.initElements(TestRule.getDriver(), this);
@@ -23,7 +23,6 @@ public class VehiclePage extends VehicleElementMap {
 		dateofmanufacture.sendKeys("09/09/2021");
 		Select cmbNumberSeats = new Select(numberofseats);
 		cmbNumberSeats.selectByVisibleText("5");
-		righthanddriveyes.findElement(By.id("righthanddriveyes")).click();
 		Select cmbNumberSeatsMotor = new Select(numberofseatsmotorcycle);
 		cmbNumberSeatsMotor.selectByVisibleText("2");
 		Select cmbFuel= new Select(fuel);
@@ -53,8 +52,6 @@ public class VehiclePage extends VehicleElementMap {
 		Select cmbOccupation= new Select(occupation);
 		cmbOccupation.selectByVisibleText("Employee");
 		website.sendKeys("github.com/karolinelopes");
-		//picture.sendKeys("C:\\imagem\\eu.jpg");
-		
 	}
 	
 	public void clico_no_botao_next_product_data() {
