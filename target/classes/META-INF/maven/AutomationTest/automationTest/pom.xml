@@ -45,15 +45,6 @@
 			<version>6.10.4</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-junit4</artifactId>
-			<version>2.13.8</version>
-			<scope>test</scope>
-		</dependency>
-
-
 
 	</dependencies>
 

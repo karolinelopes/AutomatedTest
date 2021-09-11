@@ -26,7 +26,7 @@ public class TestRule {
 	
 	@After
     public void end(){
-        driver.quit();
+        //driver.quit();
     }
 	
 	public static WebDriver getDriver() {
